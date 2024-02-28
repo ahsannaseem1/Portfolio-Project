@@ -1,0 +1,13 @@
+body {
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+    width: 375px;
+}
+
+.header_section {
+    width: 375px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
