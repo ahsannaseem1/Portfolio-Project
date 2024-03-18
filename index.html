@@ -184,7 +184,6 @@
                     <div class="lang_box"><img src="./images/css.png" alt="">
                         <h4>CSS</h4>
                     </div>
-
                 </div>
                 <div class="component">
                     <h3>Frameworks</h3>
@@ -206,14 +205,23 @@
                     <p>If you have an application you are interested in developing, a feature that you need built or a
                         project that needs coding. I’d love to help with it </p>
                 </div>
-                <div class="form">
-                    <input type="text" value="Lorem Ipsum">
-                    <input type="text" value="loremipsum@gmail.com">
-                    <textarea name="message" rows="4" cols="50" placeholder="Write your message here"></textarea>
-                </div>
-                <div class="form_button">
-                    <button type="button">Get in touch</button>
-                </div>
+                <form action="https://formspree.io/f/mdoqlejn" method="POST">
+                    <div class="form">
+                        <label>
+                            <input type="text" placeholder="username" name="username" maxlength="30" required>
+                        </label>
+                        <label>
+                            <input type="email" placeholder="email" name="email" required>
+                        </label>
+                        <label>
+                            <textarea name="message" rows="10" cols="50" placeholder="Write your message here"
+                                maxlength="500" required></textarea>
+                        </label>
+                    </div>
+                    <div class="form_button">
+                        <button type="submit">Get in touch</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
