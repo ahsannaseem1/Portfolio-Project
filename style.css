@@ -40,7 +40,6 @@ body {
   gap: 10px;
   padding-right: 120px;
   padding-top: 10px;
-  ;
 }
 
 .header_section ul li {
@@ -63,7 +62,6 @@ body {
     padding-top: 10px;
     font-size: 20px;
   }
-
 }
 
 /* --------------------------- Headline Section------------------------- */
@@ -94,7 +92,7 @@ body {
   font-size: 40px;
   margin-top: 0;
   width: 52%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .headline p {
@@ -205,7 +203,7 @@ h5 {
   padding-left: 15px;
 }
 
-.category li {
+.category ul li {
   font-size: 13px;
   margin: 0 15px;
 }
