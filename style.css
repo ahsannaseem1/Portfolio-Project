@@ -1,16 +1,21 @@
 body {
-  margin-left: 40%;
   font-family: "Poppins", sans-serif;
-  width: 375px;
   background-color: #e5e5e5;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* --------------------------- Header Section------------------------- */
 .background {
   background-color: #f7f7f9;
 }
 
-/* --------------------------- Header Section------------------------- */
+.logo {
+  color: #7f8cff;
+  padding-left: 100px;
+  padding-top: 10px;
+  font-size: 20px;
+}
 
 .header_section {
   height: 48px;
@@ -19,6 +24,44 @@ body {
   align-items: center;
   padding: 0 20px;
   background-color: white;
+}
+
+.header_section img {
+  height: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header_section ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+.header_section ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .header_section ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    color: #7f8cff;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
 }
 
 /* --------------------------- Headline Section------------------------- */
@@ -142,7 +185,7 @@ h5 {
   padding-left: 15px;
 }
 
-.category li {
+.category ul li {
   font-size: 13px;
   margin: 0 15px;
 }
