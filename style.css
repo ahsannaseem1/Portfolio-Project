@@ -12,7 +12,7 @@ body {
 
 .logo {
   color: #7f8cff;
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 10px;
   font-size: 20px;
 }
@@ -38,9 +38,8 @@ body {
   list-style: none;
   display: flex;
   gap: 10px;
-  padding-right: 80px;
+  padding-right: 100px;
   padding-top: 10px;
-  ;
 }
 
 .header_section ul li {
@@ -63,7 +62,6 @@ body {
     padding-top: 10px;
     font-size: 20px;
   }
-
 }
 
 /* --------------------------- Headline Section------------------------- */
@@ -187,7 +185,7 @@ h5 {
   padding-left: 15px;
 }
 
-.category li {
+.category ul li {
   font-size: 13px;
   margin: 0 15px;
 }
