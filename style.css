@@ -3,6 +3,7 @@ body {
   background-color: #e5e5e5;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* --------------------------- Header Section------------------------- */
@@ -70,7 +71,7 @@ body {
   width: 100vw;
   background-image: url('./images/desktop_headline.png');
   background-color: white;
-  border-bottom-left-radius: 90px;
+  border-bottom-left-radius: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +137,7 @@ h5 {
   place-items: center;
   height: 2650px;
   margin-top: 80px;
+  overflow-x: hidden;
   padding-bottom: 70px;
 }
 
@@ -323,15 +325,22 @@ button {
 
 /* ----------------------------About Section------------------------- */
 .about_section {
+  overflow-x: hidden;
   background-color: white;
-  border-top-right-radius: 80px;
-  height: 1150px;
-  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-right-radius: 160px;
+  width: 100vw;
+  height: 800px;
+  padding-left: 65px;
 }
 
 .about_heading {
   display: flex;
   flex-direction: column;
+  width: 35%;
+  margin-left: 70px;
 }
 
 .about_heading h1 {
@@ -339,7 +348,6 @@ button {
   font-size: 40px;
   width: 300px;
   height: 50px;
-  margin-top: 115px;
   margin-left: 20px;
   margin-bottom: 15px;
 }
@@ -347,18 +355,19 @@ button {
 .about_heading p {
   font-size: 15px;
   line-height: 26px;
-  width: 300px;
-  height: 146px;
+  width: 68%;
+  height: 116px;
   margin-left: 20px;
-  margin-bottom: 0;
+  padding-bottom: 20px;
   margin-top: 0;
 }
 
 .about_heading h5 {
   color: #7f8cff;
   font-weight: 600;
+  margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
@@ -382,21 +391,25 @@ button {
   border-radius: 8px;
   font-size: 18px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .skills {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
 }
 
 .component {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 260px;
+  width: 85%;
   padding: 8px 55px 0 20px;
 }
 
@@ -405,41 +418,172 @@ button {
 }
 
 .lang_name {
+  display: flex;
   margin-top: 5px;
 }
 
 .lang_box {
   display: flex;
+  margin-right: 20px;
   align-items: center;
+  flex-direction: column;
   background-color: #f7f7f9;
-  width: 270px;
-  height: 66px;
-  margin-top: 13px;
   border-radius: 8px;
-  padding: 4px 10px 4px 15px;
+  width: 120px;
+  height: 120px;
 }
 
 .lang_box img {
   height: 48px;
   width: 48px;
   border-radius: 50px;
+  margin-top: 20px;
 }
 
 .lang_box h4 {
-  margin-left: 15px;
   font-weight: 500;
   font-size: 15px;
 }
 
 .line {
-  width: 300px;
+  width: 90%;
   border: 1px solid #dfe1e6;
 }
 
+@media screen and (max-width: 768px) {
+  .about_section {
+    background-color: white;
+    border-top-right-radius: 80px;
+    height: 1150px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_heading {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .about_heading h1 {
+    color: #172b4d;
+    font-size: 40px;
+    width: 300px;
+    height: 50px;
+    margin-top: 115px;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+
+  .about_heading p {
+    font-size: 15px;
+    line-height: 26px;
+    width: 300px;
+    height: 146px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .about_heading h5 {
+    color: #7f8cff;
+    font-weight: 600;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .about_heading .icons {
+    margin-left: 0;
+    padding: 19px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about_heading button {
+    color: #396df2;
+    font-weight: 500;
+    background-color: white;
+    width: 165px;
+    height: 48px;
+    padding: 5px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    padding: 8px 55px 0 20px;
+  }
+
+  .component h3 {
+    font-weight: 600;
+  }
+
+  .lang_name {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang_box {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f9;
+    width: 220px;
+    height: 29px;
+    margin-top: 13px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .lang_box img {
+    height: 48px;
+    width: 48px;
+    margin-top: 0;
+    border-radius: 50px;
+  }
+
+  .lang_box h4 {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .line {
+    width: 300px;
+    border: 1px solid #dfe1e6;
+  }
+}
+
 /* --------------------------- Contact Section------------------------- */
+
 .contact_section {
   position: relative;
   height: 800px;
+  overflow-x: hidden;
   background-color: white;
 }
 
